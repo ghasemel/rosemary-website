@@ -22,18 +22,39 @@
             font-weight: bold;
         }
 
-        /* Hero Section with Banner */
+        /* Hero Section with Overlay */
         .hero {
-            background: url('https://github.com/ghasemel/aiBudgeting-website/blob/ddf14228211429b29f4a65c499a8b1334560cd86/banner.jpeg') no-repeat center center/cover;
+            position: relative;
+            background: url('assets/banner.jpeg') no-repeat center center/cover;
             height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             color: white;
-            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        /* Dark Overlay for Readability */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        }
+
+        /* Text on Hero */
+        .hero h1 {
+            position: relative;
             font-size: 32px;
             font-weight: bold;
-            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); /* Dark background for better contrast */
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
         }
 
         /* Features Section */
@@ -97,9 +118,9 @@
         Rosemary Crafted Solutions
     </header>
 
-    <!-- Hero Section with Banner -->
+    <!-- Hero Section with Banner and Overlay -->
     <div class="hero">
-        Smarter Personal Finance with aiBudgeting
+        <h1>Smarter Personal Finance with aiBudgeting</h1>
     </div>
 
     <!-- About aiBudgeting -->
@@ -108,7 +129,7 @@
         <p>aiBudgeting helps you track expenses, predict future spending, and plan purchases with AI-powered insights.</p>
     </section>
 
-    <!-- Features -->
+    <!-- Features Section -->
     <section class="features">
         <div class="feature">
             <h3>Smart Expense Tracking</h3>
