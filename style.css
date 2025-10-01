@@ -1,0 +1,107 @@
+
+/* General Styles */
+:root{
+  --bg:#f5f5f5;
+  --fg:#333;
+  --ink:#000;
+  --muted:#666;
+  --card:#fff;
+  --shadow:0 0 10px rgba(0,0,0,.1);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+    text-align: center;
+}
+a{color:#0070f3;text-decoration:none}
+a:hover{text-decoration:underline}
+header {
+    background: var(--ink);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer {
+    background: var(--ink);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+/* Buttons */
+.cta-button, button {
+    background: var(--ink);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cta-button:hover, button:hover { background:#444; }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.hero img { max-width: 200px; height: auto; }
+.hero h1 { font-size: 32px; margin-top: 20px; }
+.hero p { font-size: 18px; max-width: 600px; margin: 10px auto; color: var(--muted); }
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+.feature {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    flex: 1;
+    max-width: 300px;
+    text-align:left;
+}
+.feature h3{margin-top:0}
+
+/* Contact Form / Card */
+.contact {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-width: 500px;
+    margin: 0 auto 40px;
+    text-align:left;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Generic page wrapper for interior pages like privacy.html */
+.page {
+    max-width: 900px;
+    margin: 40px auto;
+    background: var(--card);
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align:left;
+}
+.page h1,.page h2{margin-top:0;text-align:center}
+.muted{color:var(--muted)}
