@@ -3,59 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosemary Solutions</title>
-</head>
+    <meta name="description" content="RosaFinance - Make managing money feel natural. Your AI finance assistant powered by Rosa.">
+    <title>RosaFinance - AI-Powered Personal Finance</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/rosafinance/rosa-avatar@112.png">
+
     <link rel="stylesheet" href="style.css">
-</head>
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        Rosemary Solutions
-    </header>
-
-    <!-- Hero Section with Logo -->
-    <div class="hero">
-        <img src="./assets/rosemary_logo.png" alt="Rosemary Solutions Logo">
-        <h1>Smarter Personal Finance with Moneyleaf</h1>
-        <p>Moneyleaf helps you track expenses, predict future spending, and plan purchases with AI-powered insights.</p>
-        <button class="cta-button">Get Started</button>
-    </div>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="feature">
-            <h3>Smart Expense Tracking</h3>
-            <p>Automatically import and categorize expenses from receipts and bills.</p>
+    <!-- Minimal Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-logo">RosaFinance</div>
+            <a href="#notify" class="nav-link">Notify me</a>
         </div>
-        <div class="feature">
-            <h3>AI-Based Predictions</h3>
-            <p>Get insights into future expenses and income trends.</p>
-        </div>
-        <div class="feature">
-            <h3>Financial Planning</h3>
-            <p>Determine the best time to make purchases based on your history.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Make managing money feel natural</h1>
+            <p class="hero-subtitle">Meet Rosa, your AI finance assistant</p>
+            <div class="hero-image">
+                <img src="./assets/rosafinance/rosa-1.png" alt="RosaFinance app showing Rosa AI assistant" class="phone-mockup">
+            </div>
+            <a href="#" class="app-store-badge-link">
+                <svg class="app-store-badge" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <title>Download on the App Store</title>
+                    <rect width="120" height="40" rx="8" fill="#000"/>
+                    <text x="60" y="25" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="12" fill="#fff" text-anchor="middle">Available on the</text>
+                    <text x="60" y="34" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="7" fill="#fff" text-anchor="middle">App Store</text>
+                </svg>
+            </a>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section>
-        <h2>Contact Us</h2>
-        <div class="contact">
-            <p>
-                <a href="mailto:info@rosemarysolutions.com?subject=Contact%20Request&body=Hello,%20I%20would%20like%20to%20get%20in%20touch.">
-                    Contact Us
-                </a>
-            </p>
+    <!-- Feature 1: Talk to Rosa -->
+    <section class="feature feature-left">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2 class="feature-title">Your AI finance assistant</h2>
+                <p class="feature-description">Just talk, type, or show me what's on your mind — I'll take care of the rest.</p>
+            </div>
+            <div class="feature-image">
+                <img src="./assets/rosafinance/rosa-3.png" alt="Chat with Rosa AI assistant" class="phone-mockup" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 2: Receipt Scanning -->
+    <section class="feature feature-right">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2 class="feature-title">Automatic transaction extraction</h2>
+                <p class="feature-description">Share receipts or bank statements — Rosa extracts transactions instantly from your camera, photo library, or screenshots.</p>
+            </div>
+            <div class="feature-image">
+                <img src="./assets/rosafinance/rosa-5.png" alt="Receipt scanning and transaction extraction" class="phone-mockup" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: Budgeting & Insights -->
+    <section class="feature feature-left feature-dark">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2 class="feature-title">See where your money flows</h2>
+                <p class="feature-description">Track expenses, predict future spending, and make smarter financial decisions with AI-powered insights.</p>
+            </div>
+            <div class="feature-image">
+                <img src="./assets/rosafinance/flows-1.png" alt="Budget tracking and financial insights" class="phone-mockup" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot Gallery -->
+    <section class="gallery">
+        <div class="gallery-content">
+            <h2 class="gallery-title">Designed for the way you think about money</h2>
+            <div class="gallery-scroll">
+                <div class="gallery-item">
+                    <img src="./assets/rosafinance/rosa-1.png" alt="Rosa AI chat interface" class="phone-mockup" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/rosafinance/rosa-2.png" alt="Transaction sharing with Rosa" class="phone-mockup" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/rosafinance/flows-1.png" alt="Budget flows view" class="phone-mockup" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/rosafinance/reports-1.png" alt="Financial reports and analytics" class="phone-mockup" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/rosafinance/transactions.png" alt="Transaction list view" class="phone-mockup" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section class="privacy">
+        <div class="privacy-content">
+            <h2 class="privacy-title">Your data. Your control.</h2>
+            <p class="privacy-description">No bank accounts to link. No setup required. Your financial data stays on your device and in EU servers you control.</p>
+            <a href="/privacy.html" class="privacy-link">Learn more about privacy</a>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="pricing-content">
+            <h2 class="pricing-title">Try it free for 14 days</h2>
+            <p class="pricing-price">€5.83/month after trial. Cancel anytime.</p>
+            <p class="pricing-note">Billed annually at €69.99/year</p>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="cta" id="notify">
+        <div class="cta-content">
+            <h2 class="cta-title">Get RosaFinance</h2>
+            <p class="cta-subtitle">Available soon on the App Store</p>
+            <form class="email-signup" id="emailForm">
+                <input type="email" placeholder="Enter your email" class="email-input" required>
+                <button type="submit" class="email-submit">Get notified</button>
+            </form>
+            <div class="email-message" id="emailMessage"></div>
+            <a href="#" class="app-store-badge-link">
+                <svg class="app-store-badge" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <title>Download on the App Store</title>
+                    <rect width="120" height="40" rx="8" fill="#000"/>
+                    <text x="60" y="25" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="12" fill="#fff" text-anchor="middle">Available on the</text>
+                    <text x="60" y="34" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="7" fill="#fff" text-anchor="middle">App Store</text>
+                </svg>
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        &copy; 2025 Rosemary Solutions. All rights reserved.
-        &nbsp;|&nbsp; <a href="/privacy.html">Privacy Policy</a>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/privacy.html" class="footer-link">Privacy Policy</a>
+                <span class="footer-separator">|</span>
+                <a href="mailto:info@rosemarysolutions.com" class="footer-link">Contact</a>
+            </div>
+            <p class="footer-copyright">© 2025 Rosemary Solutions. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
