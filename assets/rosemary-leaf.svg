@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 80" fill="none">
+  <!-- Simple rosemary leaf/sprig -->
+  <path d="M12 2 C12 2, 12 78, 12 78" stroke="#1d1d1f" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Left leaves -->
+  <path d="M12 10 C12 10, 7 8, 5 9" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 18 C12 18, 6 16, 4 17" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 26 C12 26, 7 24, 5 25" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 34 C12 34, 6 32, 4 33" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 42 C12 42, 7 40, 5 41" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 50 C12 50, 6 48, 4 49" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 58 C12 58, 7 56, 5 57" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 66 C12 66, 6 64, 4 65" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+  <!-- Right leaves -->
+  <path d="M12 14 C12 14, 17 12, 19 13" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 22 C12 22, 18 20, 20 21" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 30 C12 30, 17 28, 19 29" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 38 C12 38, 18 36, 20 37" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 46 C12 46, 17 44, 19 45" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 54 C12 54, 18 52, 20 53" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 62 C12 62, 17 60, 19 61" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M12 70 C12 70, 18 68, 20 69" stroke="#1d1d1f" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+</svg>
