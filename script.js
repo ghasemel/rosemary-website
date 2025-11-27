@@ -152,6 +152,26 @@ const enhanceGallery = () => {
 };
 
 // =============================================
+// Nav Scroll Effect
+// =============================================
+const handleNavScroll = () => {
+  const nav = document.querySelector('.nav');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+
+    lastScroll = currentScroll;
+  });
+};
+
+// =============================================
 // Initialize All Functions on DOM Load
 // =============================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -159,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
   handleEmailSignup();
   smoothScrolling();
   enhanceGallery();
+  handleNavScroll();
 });
 
 // =============================================
