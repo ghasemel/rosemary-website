@@ -268,8 +268,11 @@
         <div class="cta-content">
             <h2 class="cta-title">Get RosaFinance</h2>
             <p class="cta-subtitle">Available soon on the App Store</p>
-            <form class="email-signup" id="emailForm">
-                <input type="email" placeholder="Enter your email" class="email-input" required>
+            <form class="email-signup" id="emailForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="26dce92f-db8c-4c9d-9630-0fbf98d5de3b">
+                <input type="email" name="email" placeholder="Enter your email" class="email-input" required>
+                <input type="hidden" name="subject" value="New RosaFinance Launch Notification Signup">
+                <input type="hidden" name="redirect" value="false">
                 <button type="submit" class="email-submit">Get notified</button>
             </form>
             <div class="email-message" id="emailMessage"></div>

@@ -29,12 +29,13 @@ const observeElements = () => {
 };
 
 // =============================================
-// Email Signup Form Handler
+// Email Signup Form Handler - Web3Forms Integration
 // =============================================
 const handleEmailSignup = () => {
   const form = document.getElementById('emailForm');
   const emailInput = form.querySelector('.email-input');
   const messageDiv = document.getElementById('emailMessage');
+  const submitButton = form.querySelector('.email-submit');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -49,28 +50,36 @@ const handleEmailSignup = () => {
       return;
     }
 
-    // Show success message (placeholder - integrate with backend later)
-    showMessage('Thanks! We\'ll notify you when RosaFinance launches.', 'success');
-    emailInput.value = '';
+    // Disable submit button and show loading state
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
 
-    // TODO: Send email to backend (Mailchimp, ConvertKit, etc.)
-    // Example:
-    // try {
-    //   const response = await fetch('/api/subscribe', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify({ email })
-    //   });
-    //
-    //   if (response.ok) {
-    //     showMessage('Thanks! We\'ll notify you when RosaFinance launches.', 'success');
-    //     emailInput.value = '';
-    //   } else {
-    //     showMessage('Something went wrong. Please try again.', 'error');
-    //   }
-    // } catch (error) {
-    //   showMessage('Something went wrong. Please try again.', 'error');
-    // }
+    try {
+      // Prepare form data
+      const formData = new FormData(form);
+
+      // Submit to Web3Forms
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        showMessage('Thanks! We\'ll notify you when RosaFinance launches.', 'success');
+        emailInput.value = '';
+      } else {
+        showMessage('Something went wrong. Please try again.', 'error');
+      }
+    } catch (error) {
+      showMessage('Something went wrong. Please try again.', 'error');
+      console.error('Form submission error:', error);
+    } finally {
+      // Re-enable submit button
+      submitButton.disabled = false;
+      submitButton.textContent = 'Get notified';
+    }
   });
 
   function showMessage(text, type) {
