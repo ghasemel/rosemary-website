@@ -340,6 +340,97 @@ body {
   border-radius: 8px;
 }
 
+/* =============================================
+   How It Works Section
+   ============================================= */
+.how-it-works {
+  padding: var(--spacing-xxl) var(--spacing-md);
+  background: linear-gradient(135deg, #ffffff 0%, #faf9f8 50%, #f8f5ff 100%);
+}
+
+.how-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -1px;
+}
+
+.how-subtitle {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.how-examples {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.how-example {
+  display: flex;
+  gap: var(--spacing-md);
+  text-align: left;
+  padding: var(--spacing-lg);
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-example:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(155, 127, 207, 0.12);
+}
+
+.how-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-purple);
+  opacity: 0.3;
+  line-height: 1;
+  min-width: 50px;
+}
+
+.how-example-content {
+  flex: 1;
+}
+
+.how-example-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.how-example-text {
+  font-size: 16px;
+  color: var(--color-purple);
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: rgba(155, 127, 207, 0.08);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.how-example-result {
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
 .phone-mockup {
   max-width: 320px;
   width: 100%;
@@ -778,6 +869,19 @@ body {
     font-size: 18px;
   }
 
+  .how-examples {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .how-title {
+    font-size: 36px;
+  }
+
+  .how-subtitle {
+    font-size: 18px;
+  }
+
   .feature-title,
   .gallery-title,
   .privacy-title,
@@ -881,6 +985,31 @@ body {
   .why-card-text,
   .why-solution {
     font-size: 15px;
+  }
+
+  .how-title {
+    font-size: 32px;
+  }
+
+  .how-subtitle {
+    font-size: 16px;
+  }
+
+  .how-example-title {
+    font-size: 18px;
+  }
+
+  .how-example-text {
+    font-size: 15px;
+  }
+
+  .how-example-result {
+    font-size: 14px;
+  }
+
+  .how-number {
+    font-size: 28px;
+    min-width: 40px;
   }
 
   .app-store-badge {
