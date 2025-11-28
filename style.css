@@ -251,6 +251,94 @@ body {
   object-fit: cover;
 }
 
+/* =============================================
+   Why RosaFinance Section
+   ============================================= */
+.why-section {
+  padding: var(--spacing-xxl) var(--spacing-md);
+  background: linear-gradient(135deg, #f8f5ff 0%, #ffffff 50%, #faf9f8 100%);
+}
+
+.why-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -1px;
+}
+
+.why-subtitle {
+  font-size: 20px;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.why-card {
+  background: white;
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(155, 127, 207, 0.15);
+}
+
+.why-icon {
+  font-size: 48px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.why-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.why-card-text {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+.why-arrow {
+  font-size: 24px;
+  color: var(--color-purple);
+  margin: var(--spacing-sm) 0;
+  font-weight: 600;
+}
+
+.why-solution {
+  font-size: 16px;
+  color: var(--color-purple);
+  font-weight: 500;
+  line-height: 1.6;
+  padding: var(--spacing-sm);
+  background: rgba(155, 127, 207, 0.1);
+  border-left: 3px solid var(--color-purple);
+  border-radius: 8px;
+}
 
 .phone-mockup {
   max-width: 320px;
@@ -677,6 +765,19 @@ body {
     align-items: center;
   }
 
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .why-title {
+    font-size: 36px;
+  }
+
+  .why-subtitle {
+    font-size: 18px;
+  }
+
   .feature-title,
   .gallery-title,
   .privacy-title,
@@ -763,6 +864,23 @@ body {
 
   .feature-check {
     font-size: 18px;
+  }
+
+  .why-title {
+    font-size: 32px;
+  }
+
+  .why-subtitle {
+    font-size: 16px;
+  }
+
+  .why-card-title {
+    font-size: 20px;
+  }
+
+  .why-card-text,
+  .why-solution {
+    font-size: 15px;
   }
 
   .app-store-badge {
