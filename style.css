@@ -83,7 +83,7 @@ body {
 .nav-content {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 14px var(--spacing-md);
+  padding: 5px var(--spacing-md);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,8 +91,8 @@ body {
 
 .nav-logo {
   display: flex;
-  align-items: center;
-  gap: 14px;
+  align-items: flex-end;
+  gap: 0px;
   transition: opacity 0.2s ease, transform 0.2s ease;
   text-decoration: none;
 }
@@ -106,6 +106,8 @@ body {
   height: 40px;
   width: auto;
   filter: drop-shadow(0 2px 8px rgba(155, 127, 207, 0.3));
+  margin: 0;
+  padding: 0;
 }
 
 .nav-company-name {
@@ -113,6 +115,9 @@ body {
   font-weight: 600;
   color: #ffffff;
   letter-spacing: -0.3px;
+  margin: 0;
+  padding: 0;
+  margin-left: -14px;
 }
 
 .nav-link {
@@ -713,7 +718,7 @@ body {
   }
 
   .nav-logo {
-    gap: 10px;
+    gap: 0px;
   }
 
   .nav-logo-icon {
@@ -814,7 +819,7 @@ body {
 /* Small mobile phones */
 @media (max-width: 480px) {
   .nav-logo {
-    gap: 8px;
+    gap: 0px;
   }
 
   .nav-logo-icon {
