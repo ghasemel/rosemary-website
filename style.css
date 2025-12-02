@@ -558,9 +558,46 @@ body {
   max-width: 500px;
 }
 
+.feature-note {
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--color-purple);
+  font-weight: 500;
+  max-width: 500px;
+  margin-top: var(--spacing-sm);
+  font-style: italic;
+}
+
 .feature-image {
   display: flex;
   justify-content: center;
+}
+
+.feature-image-dual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dual-image-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.receipt-image {
+  max-width: 280px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.dual-image-arrow {
+  font-size: 48px;
+  color: var(--color-purple);
+  font-weight: 700;
+  opacity: 0.6;
 }
 
 /* =============================================
@@ -1046,6 +1083,24 @@ body {
   .feature-description,
   .privacy-description {
     font-size: 17px;
+  }
+
+  .feature-note {
+    font-size: 15px;
+  }
+
+  .dual-image-container {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .dual-image-arrow {
+    transform: rotate(90deg);
+    font-size: 36px;
+  }
+
+  .receipt-image {
+    max-width: 220px;
   }
 
   .cta-title {
