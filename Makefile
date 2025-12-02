@@ -1,3 +1,3 @@
 run:
-	python3 -m http.server 8002 &
-	open http://localhost:8002
+	python3 -m http.server 8003 &
+	open http://localhost:8003

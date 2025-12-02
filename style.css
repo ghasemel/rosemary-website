@@ -683,6 +683,17 @@ body {
   margin-bottom: var(--spacing-xs);
 }
 
+.pricing-intro {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-purple);
+  margin-bottom: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-md);
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(219, 39, 119, 0.1) 100%);
+  border-radius: 12px;
+  display: inline-block;
+}
+
 .pricing-note {
   font-size: 17px;
   color: var(--color-text-secondary);
