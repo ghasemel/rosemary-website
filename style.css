@@ -486,7 +486,6 @@ body {
    ============================================= */
 .feature {
   padding: var(--spacing-xxl) var(--spacing-md);
-  background-color: var(--color-white);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -513,8 +512,8 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-xl);
+  grid-template-columns: 400px 1fr;
+  gap: var(--spacing-lg);
   align-items: center;
 }
 
@@ -582,15 +581,49 @@ body {
 .dual-image-container {
   display: flex;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
   justify-content: center;
+  padding: var(--spacing-sm);
+  max-width: 100%;
+  background: none !important;
 }
 
 .receipt-image {
   max-width: 280px;
+  width: auto;
   height: auto;
+  object-fit: contain;
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  flex-shrink: 1;
+  display: block;
+}
+
+.dual-image-container .phone-mockup {
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 1;
+  display: block;
+  border-radius: 45px;
+  border: 4px solid #1d1d1f;
+  box-shadow: 0 0 0 1px #2c2c2e;
+  position: relative;
+  background: #000;
+}
+
+/* Dynamic Island for carousel phone mockups */
+.dual-image-container .phone-mockup::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 126px;
+  height: 37px;
+  background: #000;
+  border-radius: 0 0 19px 19px;
+  z-index: 1;
 }
 
 .dual-image-arrow {
@@ -598,6 +631,117 @@ body {
   color: var(--color-purple);
   font-weight: 700;
   opacity: 0.6;
+}
+
+/* Translation Carousel with Flickity */
+.translation-carousel {
+  position: relative;
+  width: 100%;
+  padding-bottom: var(--spacing-xl);
+  background: none !important;
+}
+
+.translation-carousel.flickity-enabled {
+  position: relative;
+  background: none !important;
+}
+
+.translation-carousel .flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  background: none !important;
+}
+
+.translation-carousel .flickity-slider {
+  position: relative;
+  background: none !important;
+}
+
+.carousel-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  background: none !important;
+}
+
+.carousel-slide.is-selected {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto;
+}
+
+.slide-label {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Style Flickity dots to match our design */
+.flickity-page-dots {
+  bottom: -40px !important;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-purple);
+  background-color: transparent;
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.flickity-page-dots .dot:hover {
+  background-color: rgba(147, 51, 234, 0.3);
+}
+
+.flickity-page-dots .dot.is-selected {
+  background-color: var(--color-purple);
+  width: 32px;
+  border-radius: 6px;
+}
+
+/* Force remove all Flickity backgrounds */
+.flickity-enabled,
+.flickity-viewport,
+.flickity-slider,
+.flickity-enabled.is-draggable {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Ensure translation feature section has no background */
+.translation-feature,
+.translation-feature .feature-content,
+.translation-feature .feature-text,
+.translation-feature .translation-carousel,
+.translation-feature .carousel-slide,
+.translation-feature .slide-label,
+.translation-feature .dual-image-container {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* Phone mockups need black background for iPhone frame */
+.translation-feature .phone-mockup {
+  background: #000 !important;
+  background-color: #000 !important;
+}
+
+/* Dot navigation styling */
+.translation-feature .flickity-page-dots .dot {
+  background-color: transparent !important;
+}
+
+.translation-feature .flickity-page-dots .dot.is-selected {
+  background-color: var(--color-purple) !important;
 }
 
 /* =============================================
@@ -1092,6 +1236,7 @@ body {
   .dual-image-container {
     flex-direction: column;
     gap: var(--spacing-md);
+    min-height: auto;
   }
 
   .dual-image-arrow {
@@ -1101,6 +1246,12 @@ body {
 
   .receipt-image {
     max-width: 220px;
+    max-height: 450px;
+  }
+
+  .dual-image-container .phone-mockup {
+    max-width: 260px;
+    max-height: 500px;
   }
 
   .cta-title {

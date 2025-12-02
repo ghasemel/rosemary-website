@@ -189,7 +189,17 @@ document.addEventListener('DOMContentLoaded', () => {
   smoothScrolling();
   enhanceGallery();
   handleNavScroll();
+  initTranslationCarousel();
 });
+
+// =============================================
+// Translation Carousel with Flickity
+// =============================================
+const initTranslationCarousel = () => {
+  // Flickity initializes automatically from data-flickity attribute
+  // No JavaScript needed!
+  console.log('Flickity carousel initialized via data attribute');
+};
 
 // =============================================
 // Lazy Load Images (Already handled by loading="lazy" in HTML)
