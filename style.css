@@ -889,6 +889,24 @@ body {
   text-align: center;
 }
 
+.about-cta {
+  padding: 56px var(--spacing-md) 14px !important;
+}
+
+.about-cta .cta-title {
+  font-size: 36px;
+  margin-bottom: var(--spacing-xs);
+}
+
+.about-cta .cta-subtitle {
+  font-size: 17px;
+  margin-bottom: var(--spacing-md);
+}
+
+.about-cta .email-signup {
+  margin-bottom: var(--spacing-sm);
+}
+
 .cta-content {
   max-width: 600px;
   margin: 0 auto;
@@ -1353,6 +1371,11 @@ body {
   background: linear-gradient(135deg, #faf9f8 0%, #ffffff 50%, #f8f5ff 100%);
 }
 
+/* About page has no bottom padding since CTA section follows */
+main.privacy-page {
+  padding-bottom: 0;
+}
+
 .privacy-page-content {
   max-width: 800px;
   margin: 0 auto;
@@ -1386,6 +1409,10 @@ body {
 
 .privacy-section {
   margin-bottom: var(--spacing-xl);
+}
+
+.privacy-section:last-child {
+  margin-bottom: var(--spacing-md);
 }
 
 .privacy-section-title {
