@@ -143,10 +143,29 @@ body {
 .hero {
   min-height: 75vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: calc(70px + var(--spacing-lg)) var(--spacing-md) var(--spacing-xl);
   background: linear-gradient(135deg, #faf9f8 0%, #ffffff 50%, #f8f5ff 100%);
+}
+
+.hero-product-name-banner {
+  width: 100%;
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  animation: fadeInDown 1.2s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-content {
@@ -184,12 +203,17 @@ body {
 }
 
 .hero-product-name {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--color-purple);
-  margin-bottom: var(--spacing-sm);
+  background: linear-gradient(135deg, var(--color-purple) 0%, var(--color-pink) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  text-shadow: 0 4px 20px rgba(155, 127, 207, 0.2);
+  line-height: 1.1;
 }
 
 .hero-title {
@@ -1160,7 +1184,8 @@ body {
   }
 
   .hero-product-name {
-    font-size: 14px;
+    font-size: 48px;
+    letter-spacing: 1px;
   }
 
   .hero-title {
@@ -1323,7 +1348,8 @@ body {
   }
 
   .hero-product-name {
-    font-size: 13px;
+    font-size: 36px;
+    letter-spacing: 0.5px;
   }
 
   .hero-title {
