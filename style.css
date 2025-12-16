@@ -1005,6 +1005,36 @@ body {
 }
 
 /* =============================================
+   Footnotes Section
+   ============================================= */
+.footnotes {
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: var(--color-bg-light);
+  border-top: 1px solid #e5e5e7;
+}
+
+.footnotes-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.footnotes-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.footnote-item {
+  font-size: 13px;
+  color: var(--color-text-tertiary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =============================================
    Footer - Apple Minimal Style
    ============================================= */
 .footer {
