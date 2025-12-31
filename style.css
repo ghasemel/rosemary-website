@@ -858,6 +858,12 @@ body {
   background-color: transparent !important;
 }
 
+/* Translation feature needs more space for the carousel */
+.translation-feature .feature-content {
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-md);
+}
+
 /* Phone mockups need black background for iPhone frame */
 .translation-feature .phone-mockup {
   background: #000 !important;
