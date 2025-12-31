@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/rosemary-logo-black.png?v=20251203">
     <link rel="shortcut icon" href="/assets/rosemary-logo-black.png?v=20251203">
 
-    <link rel="stylesheet" href="style.css?v=4.1">
+    <link rel="stylesheet" href="style.css?v=4.8">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -267,33 +267,39 @@
         </div>
     </section>
 
-    <!-- Feature 5: Smart Translation for Travelers -->
-    <section class="feature feature-left translation-feature">
+    <!-- Feature 5a: Translation - Receipt Scanning -->
+    <section class="feature feature-right">
         <div class="feature-content">
             <div class="feature-text">
                 <h2 class="feature-title">Lost in translation? Not anymore</h2>
-                <p class="feature-description">Shopping abroad or living as an expat? Rosa works in 50+ languages. Snap a receipt in Portuguese, type in German, speak in Japanese — Rosa understands it all and creates transactions in English.</p>
-                <p class="feature-note">Powered by AI that understands 50+ languages — no manual translation needed.</p>
+                <p class="feature-description">Shopping abroad or living as an expat? Snap a receipt in any language — Dutch, Portuguese, Japanese — and Rosa reads it, translates it, and extracts every item automatically.</p>
+                <p class="feature-note">Powered by AI that understands 50+ languages.</p>
             </div>
-            <div class="translation-carousel" data-flickity='{ "autoPlay": 5000, "wrapAround": true, "pageDots": true, "prevNextButtons": false, "fade": true }'>
-                <!-- Slide 1: Receipt Translation -->
-                <div class="carousel-slide">
-                    <div class="slide-label">Receipt scanning & translation</div>
-                    <div class="dual-image-container">
-                        <img src="./assets/rosafinance/lidl-receipt-dutch.png" alt="Dutch receipt from Lidl" class="receipt-image">
-                        <div class="dual-image-arrow">→</div>
-                        <img src="./assets/rosafinance/lidl-transaction-with-tags.png" alt="Translated transaction with English tags" class="phone-mockup">
-                    </div>
+            <div class="feature-image">
+                <div class="receipt-to-video-container">
+                    <img src="./assets/rosafinance/lidl-receipt-dutch.jpg" alt="Dutch Lidl receipt" class="receipt-image">
+                    <div class="translation-arrow">→</div>
+                    <video autoplay muted playsinline class="phone-mockup" id="receipt-scanning-video">
+                        <source src="./assets/rosafinance/lidl-reciept-scanning.mp4" type="video/mp4">
+                    </video>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Slide 2: Text Input Translation -->
-                <div class="carousel-slide">
-                    <div class="slide-label">Type in any language</div>
-                    <div class="dual-image-container">
-                        <img src="./assets/rosafinance/german-input-chat.png" alt="German text input" class="phone-mockup">
-                        <div class="dual-image-arrow">→</div>
-                        <img src="./assets/rosafinance/german-transaction-english.png" alt="English transaction from German input" class="phone-mockup">
-                    </div>
+    <!-- Feature 5b: Translation - Text Input -->
+    <section class="feature feature-left">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2 class="feature-title">Type in any language</h2>
+                <p class="feature-description">Prefer typing? Write in German, Spanish, or any language you're comfortable with. Rosa understands and creates transactions in English — no translation on your part needed.</p>
+                <p class="feature-note">"Ich habe 45 Euro für Lebensmittel ausgegeben" → €45 groceries transaction.</p>
+            </div>
+            <div class="feature-image">
+                <div class="dual-image-container">
+                    <img src="./assets/rosafinance/german-input-chat.png" alt="German text input" class="phone-mockup">
+                    <div class="dual-image-arrow">→</div>
+                    <img src="./assets/rosafinance/german-transaction-english.png" alt="English transaction from German input" class="phone-mockup">
                 </div>
             </div>
         </div>
@@ -432,6 +438,6 @@
     <!-- Flickity JS -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <script src="script.js?v=1.1"></script>
+    <script src="script.js?v=1.3"></script>
 </body>
 </html>

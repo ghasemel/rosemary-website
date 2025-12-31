@@ -44,7 +44,7 @@ const observeVideos = () => {
 
   const videoObserverOptions = {
     root: null,
-    threshold: 0.5,
+    threshold: 0.1,
     rootMargin: '0px'
   };
 
@@ -52,11 +52,12 @@ const observeVideos = () => {
     entries.forEach(entry => {
       const video = entry.target;
       if (entry.isIntersecting) {
-        video.play();
+        // Only play if not already playing
+        if (video.paused) {
+          video.play();
+        }
       } else {
         video.pause();
-        // Optionally reset to start when out of view
-        // video.currentTime = 0;
       }
     });
   }, videoObserverOptions);
@@ -219,6 +220,21 @@ const handleNavScroll = () => {
 };
 
 // =============================================
+// Delayed Loop for Receipt Scanning Video
+// =============================================
+const setupDelayedLoopVideo = () => {
+  const video = document.getElementById('receipt-scanning-video');
+  if (!video) return;
+
+  video.addEventListener('ended', () => {
+    setTimeout(() => {
+      video.currentTime = 0;
+      video.play();
+    }, 3000); // 3 second delay before looping
+  });
+};
+
+// =============================================
 // Initialize All Functions on DOM Load
 // =============================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -229,6 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
   enhanceGallery();
   handleNavScroll();
   initTranslationCarousel();
+  setupDelayedLoopVideo();
 });
 
 // =============================================
