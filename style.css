@@ -488,6 +488,20 @@ body {
   z-index: 1;
 }
 
+/* Illustration style (no phone frame) */
+.feature-image .illustration {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  max-width: 600px;
+  width: 100%;
+}
+
+.feature-image .illustration::before {
+  display: none;
+}
+
 
 .app-store-badge-link {
   display: inline-block;
@@ -595,6 +609,36 @@ body {
   max-width: 500px;
   margin-top: var(--spacing-sm);
   font-style: italic;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-md) 0;
+  margin-left: var(--spacing-md);
+  max-width: 500px;
+}
+
+.feature-list li {
+  font-size: 19px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  padding: 8px 0;
+  padding-left: 28px;
+  position: relative;
+}
+
+.feature-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-purple);
+  font-weight: 600;
+}
+
+.feature-list li strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
 }
 
 .feature-image {
