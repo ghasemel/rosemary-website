@@ -540,7 +540,7 @@ body {
 }
 
 .feature-dark {
-  background-color: var(--color-bg-dark);
+  background: var(--color-bg-dark) !important;
 }
 
 .feature-dark .feature-title {
@@ -549,6 +549,26 @@ body {
 
 .feature-dark .feature-description {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.feature-link {
+  margin-top: var(--spacing-md);
+}
+
+.feature-link a {
+  color: var(--color-purple);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.feature-link a:hover {
+  opacity: 0.8;
+}
+
+.feature-dark .feature-link a {
+  color: var(--color-purple-light, #c4b5fd);
 }
 
 .feature-content {
