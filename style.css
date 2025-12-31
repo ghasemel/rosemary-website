@@ -513,6 +513,11 @@ body {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  background: linear-gradient(135deg, #ffffff 0%, #faf9f8 50%, #f8f5ff 100%);
+}
+
+.feature:nth-child(even) {
+  background: linear-gradient(135deg, #f8f5ff 0%, #ffffff 50%, #faf9f8 100%);
 }
 
 .feature.visible {
@@ -536,7 +541,7 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--spacing-lg);
   align-items: center;
 }
@@ -548,6 +553,7 @@ body {
 .feature-right .feature-content {
   grid-template-areas: "image text";
 }
+
 
 .feature-left .feature-text {
   grid-area: text;
@@ -594,6 +600,41 @@ body {
 .feature-image {
   display: flex;
   justify-content: center;
+}
+
+/* Align content toward the center gap for consistent columns */
+.feature-left .feature-text {
+  margin-left: auto;
+  text-align: left;
+}
+
+.feature-left .feature-image {
+  justify-content: flex-start;
+}
+
+.feature-right .feature-text {
+  margin-right: auto;
+  text-align: left;
+}
+
+.feature-right .feature-image {
+  justify-content: flex-end;
+}
+
+/* Video in feature section (circular like hero) */
+.feature-video-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rosa-video-feature {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+  box-shadow: 0 20px 60px rgba(155, 127, 207, 0.3);
 }
 
 .feature-image-dual {
@@ -1285,6 +1326,11 @@ body {
     max-width: 260px;
   }
 
+  .rosa-video-feature {
+    width: 280px;
+    height: 280px;
+  }
+
   .feature {
     padding: var(--spacing-xl) var(--spacing-sm);
   }
@@ -1415,6 +1461,11 @@ body {
 
   .phone-mockup {
     max-width: 220px;
+  }
+
+  .rosa-video-feature {
+    width: 240px;
+    height: 240px;
   }
 }
 

@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/rosemary-logo-black.png?v=20251203">
     <link rel="shortcut icon" href="/assets/rosemary-logo-black.png?v=20251203">
 
-    <link rel="stylesheet" href="style.css?v=1.7">
+    <link rel="stylesheet" href="style.css?v=3.0">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -100,14 +100,14 @@
             <div class="hero-left">
                 <div class="hero-rosa-circle">
                     <video autoplay loop muted playsinline class="rosa-video">
-                        <source src="./assets/rosafinance/onboarding_page1.mp4" type="video/mp4">
+                        <source src="./assets/rosafinance/onboarding-meet-rosa.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
 
             <div class="hero-right">
                 <h2 class="hero-title">Make managing money feel natural</h2>
-                <p class="hero-description">Meet Rosa, your AI finance assistant. She understands your voice, reads receipts, and helps you track spending without complicated setup or linking bank accounts.</p>
+                <p class="hero-description">Meet Rosa, your AI finance assistant. Track spending in seconds — just talk to her, type, or snap a photo. No bank accounts to link, no complicated setup.</p>
 
                 <div class="hero-features-list">
                     <div class="hero-feature-bullet">
@@ -170,75 +170,64 @@
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <div class="how-content">
-            <h2 class="how-title">Track spending in seconds, not minutes</h2>
-            <p class="how-subtitle">Rosa turns everyday actions into organized financial data. No forms, no categories, no hassle.</p>
-
-            <div class="how-examples">
-                <div class="how-example">
-                    <div class="how-number">01</div>
-                    <div class="how-example-content">
-                        <h3 class="how-example-title">Just say it</h3>
-                        <p class="how-example-text">"I spent €45 on groceries at Lidl"</p>
-                        <p class="how-example-result">Say it in 3 seconds, Rosa handles the rest. She logs it, categorizes it, and updates your budget automatically.</p>
-                    </div>
-                </div>
-
-                <div class="how-example">
-                    <div class="how-number">02</div>
-                    <div class="how-example-content">
-                        <h3 class="how-example-title">Snap a receipt</h3>
-                        <p class="how-example-text">Take a photo of any receipt, bill, or bank statement</p>
-                        <p class="how-example-result">Rosa reads it, extracts all transactions, and organizes them automatically. Capture a full day's expenses in one photo.</p>
-                    </div>
-                </div>
-
-                <div class="how-example">
-                    <div class="how-number">03</div>
-                    <div class="how-example-content">
-                        <h3 class="how-example-title">Share from anywhere</h3>
-                        <p class="how-example-text">Share receipt photos directly from your Photos app or any other app</p>
-                        <p class="how-example-result">Rosa receives it instantly and extracts all transactions — no need to open the app first.</p>
-                    </div>
-                </div>
-
-                <div class="how-example">
-                    <div class="how-number">04</div>
-                    <div class="how-example-content">
-                        <h3 class="how-example-title">Type naturally</h3>
-                        <p class="how-example-text">"€120 for gym membership"</p>
-                        <p class="how-example-result">Rosa understands context and creates the transaction automatically — no forms to fill out.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Feature 1: Talk to Rosa -->
     <section class="feature feature-left">
         <div class="feature-content">
             <div class="feature-text">
                 <h2 class="feature-title">Talk, type, or share</h2>
-                <p class="feature-description">Tell me about your spending any way you like — by talking, typing, or sharing a photo. I'll understand your language, extract the details, and organize everything for you — no effort needed.</p>
-                <p class="feature-note">Type in Spanish, speak in Dutch, share a French receipt — Rosa understands 50+ languages and creates your transactions in English.</p>
+                <p class="feature-description">Track spending in seconds — just say "I spent €45 on groceries at Lidl" and Rosa handles the rest. She logs it, categorizes it, and updates your budget automatically.</p>
+                <p class="feature-description">Snap a receipt or share a screenshot from your bank app — Rosa reads it and extracts all transactions. Share directly from Photos, Messages, or Safari without opening the app first.</p>
+                <p class="feature-note">Works in 50+ languages — type in Spanish, speak in Dutch, snap a French receipt.</p>
             </div>
-            <div class="feature-image">
-                <img src="./assets/rosafinance/onbaording-page-2.png" alt="Talk, type, or share with Rosa" class="phone-mockup" loading="lazy">
+            <div class="feature-image feature-video-circle">
+                <video autoplay loop muted playsinline class="rosa-video-feature">
+                    <source src="./assets/rosafinance/onboarding-talk-type-share.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </section>
 
-    <!-- Feature 2: Money in Motion -->
+    <!-- Feature 2: Gets Smarter Over Time -->
+    <section class="feature feature-right">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2 class="feature-title">Gets smarter over time</h2>
+                <p class="feature-description">The more you use Rosa, the better she understands you. She learns your spending patterns and automatically categorizes new transactions based on your history.</p>
+                <p class="feature-description">Rosa detects duplicates across sources — snap a receipt today and import your bank statement tomorrow, she won't double-count. She also spots refunds and handles them correctly.</p>
+                <p class="feature-note">No manual training needed — Rosa improves automatically as you use her.</p>
+            </div>
+            <div class="feature-image feature-video-circle">
+                <video autoplay loop muted playsinline class="rosa-video-feature">
+                    <source src="./assets/rosafinance/onboarding-rosa-gets-smarter.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 3: Your Rules for Rosa -->
+    <section class="feature feature-left">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2 class="feature-title">Your rules, your way</h2>
+                <p class="feature-description">Rosa works great out of the box, but you can customize how she handles your transactions. Write rules in plain language and Rosa optimizes them automatically.</p>
+                <p class="feature-description">Tell her things like "Ignore transfers from Venmo", "Tag Netflix as Subscription", or "Always assign coffee shops to Leisure" — she'll follow your preferences every time.</p>
+                <p class="feature-note">Found in Settings → My Rules for Rosa</p>
+            </div>
+            <div class="feature-image">
+                <img src="./assets/rosafinance/tutorial-your-rules-for-rosa-w-01.png" alt="Custom rules for Rosa" class="phone-mockup" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature 4: Money in Motion -->
     <section class="feature feature-right">
         <div class="feature-content">
             <div class="feature-text">
                 <h2 class="feature-title">Money in motion</h2>
-                <p class="feature-description">Income, spending, and savings — all represented as flows, not rigid budgets. See where your money moves each month, and how much you're keeping.</p>
+                <p class="feature-description">Four simple flows: income, spending, leisure, and saving. See where your money moves each month, how much goes to needs vs wants, and what you're keeping. Fresh start every month.</p>
             </div>
             <div class="feature-image">
-                <img src="./assets/rosafinance/onbaording-page-3.png" alt="Money flows visualization" class="phone-mockup" loading="lazy">
+                <img src="./assets/rosafinance/oboarding-money-in-motion.png" alt="Money flows visualization" class="phone-mockup" loading="lazy">
             </div>
         </div>
     </section>
@@ -248,7 +237,8 @@
         <div class="feature-content">
             <div class="feature-text">
                 <h2 class="feature-title">Your privacy matters</h2>
-                <p class="feature-description">We never sell or trade your data — it always stays yours. Your information is securely stored and processed through trusted cloud providers, only shared with secure systems that power these features — never sold or used for advertising.</p>
+                <p class="feature-description">We never sell or trade your data — it always stays yours. Your information is securely stored and processed through trusted cloud providers in the EU, only shared with secure systems that power these features — never sold or used for advertising.</p>
+                <p class="feature-description">With RosaFinance, we're not interested in your personal data — our goal is to help you manage your finances safely and privately.</p>
             </div>
             <div class="feature-image">
                 <img src="./assets/rosafinance/onbaording-page-4.png" alt="Your privacy matters" class="phone-mockup" loading="lazy">
