@@ -29,6 +29,44 @@ const observeElements = () => {
 };
 
 // =============================================
+// Video Play on Scroll - Play videos when visible
+// =============================================
+const observeVideos = () => {
+  const videos = document.querySelectorAll('video');
+
+  // Pause all videos initially (except hero which should autoplay)
+  videos.forEach(video => {
+    // Check if it's not the hero video
+    if (!video.closest('.hero-rosa-circle')) {
+      video.pause();
+    }
+  });
+
+  const videoObserverOptions = {
+    root: null,
+    threshold: 0.5,
+    rootMargin: '0px'
+  };
+
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play();
+      } else {
+        video.pause();
+        // Optionally reset to start when out of view
+        // video.currentTime = 0;
+      }
+    });
+  }, videoObserverOptions);
+
+  videos.forEach(video => {
+    videoObserver.observe(video);
+  });
+};
+
+// =============================================
 // Email Signup Form Handler - Web3Forms Integration
 // =============================================
 const handleEmailSignup = () => {
@@ -185,6 +223,7 @@ const handleNavScroll = () => {
 // =============================================
 document.addEventListener('DOMContentLoaded', () => {
   observeElements();
+  observeVideos();
   handleEmailSignup();
   smoothScrolling();
   enhanceGallery();
