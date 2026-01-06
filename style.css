@@ -1403,7 +1403,7 @@ video.phone-mockup {
 
   .hero {
     min-height: auto;
-    padding: var(--spacing-xl) var(--spacing-sm) var(--spacing-lg);
+    padding: calc(70px + var(--spacing-lg)) var(--spacing-sm) var(--spacing-lg);
   }
 
   .hero-rosa-circle {
