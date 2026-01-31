@@ -2022,9 +2022,9 @@ main.privacy-page {
 
 /* Apple Watch Frame for Watch Mockups */
 .watch-mockup-feature {
-  max-width: 180px;
+  max-width: 220px;
   height: auto;
-  border-radius: 42px;
+  border-radius: 48px;
   border: 4px solid #1d1d1f;
   box-shadow:
     0 0 0 1px #2c2c2e,
@@ -2035,8 +2035,8 @@ main.privacy-page {
 
 /* Watch mockups in dual container */
 .dual-image-container .watch-mockup-feature {
-  max-width: 160px;
-  border-radius: 38px;
+  max-width: 200px;
+  border-radius: 44px;
   border: 4px solid #1d1d1f;
   box-shadow:
     0 0 0 1px #2c2c2e,
@@ -2132,13 +2132,13 @@ main.privacy-page {
   }
 
   .watch-mockup-feature {
-    max-width: 140px;
-    border-radius: 32px;
+    max-width: 170px;
+    border-radius: 38px;
   }
 
   .dual-image-container .watch-mockup-feature {
-    max-width: 130px;
-    border-radius: 30px;
+    max-width: 160px;
+    border-radius: 36px;
   }
 
   .privacy-icon-large {
